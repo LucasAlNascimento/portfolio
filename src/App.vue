@@ -1,7 +1,7 @@
 <template>
   <v-app>
-    <v-main>
-      <HelloWorld />
+    <v-main class="background-app">
+      <Home />
     </v-main>
   </v-app>
 </template>
@@ -9,3 +9,12 @@
 <script setup lang="ts">
   //
 </script>
+
+<style>
+.background-app {
+  background-image: url('src/assets/background.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+</style>
