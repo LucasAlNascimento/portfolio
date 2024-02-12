@@ -15,6 +15,6 @@
   background-image: url('src/assets/background.jpg');
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: auto;
 }
 </style>
