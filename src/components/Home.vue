@@ -27,12 +27,11 @@
     </v-container>
   </v-container>
 
-  <v-container class="d-flex flex-row justify-center ga-16">
-    <div class="d-flex flex-column my-auto ga-9 ml-4 mt-n1">
+  <v-container class="d-flex flex-row justify-center items-center ga-16">
+    <div class="d-flex flex-column w-75 my-auto ga-9 ml-4">
       <h2 class="text-teal-accent-3 text-uppercase text-h5 font-weight-black">Habilidades do Herói</h2>
       <p class="text-white text-justify font-weight-medium">
-        Um herói desenvolvedor front-end deve possuir habilidades eficazes como:<br />
-
+        Um herói desenvolvedor front-end deve possuir <span class="text-teal-accent-4 font-weight-medium">habilidades eficazes</span> como:<br/>
       </p>
       <ul class="text-white text-justify font-weight-medium">
         <li>Inovação e Criatividade (CRE) - Creativity</li>
@@ -42,17 +41,135 @@
         <li>Adaptabilidade às Mudanças (ADA) - Adaptability</li>
         <li>Aprendizado Contínuo (LEA) - Learning</li>
       </ul>
-      <p>Esses atributos combinados capacitam o desenvolvedor front-end a criar interfaces excepcionais e a
-        se destacar na área.</p>
     </div>
-    <div class="mr-15 w-100">
-      <p class="text-white text-justify font-weight-medium">
+    <div class="w-50 d-flex flex-wrap justify-center items-center ga-11 py-6 mr-14 rounded-xl mt-xl-auto" style="background-color: #2b2b2b59" ref="scrollTarget">
+      <div class="semi-circle" style="--percentage : 95; --fill: #00ff15 ;">
+        Creativity
+      </div>
+      <div class="semi-circle" style="--percentage : 89; --fill: #00d9ff ;">
+        Skills
+      </div>
+      <div class="semi-circle" style="--percentage : 94; --fill: #00ff15 ;">
+        Design
+      </div>
+      <div class="semi-circle" style="--percentage : 92; --fill: #00d9ff ;">
+        Communication
+      </div>
+      <div class="semi-circle" style="--percentage : 97; --fill: #00ff15 ;">
+        Adaptability
+      </div>
+      <div class="semi-circle" style="--percentage : 99; --fill: #00d9ff ;">
+        Learning
+      </div>
 
+    </div>
+  </v-container>
+
+  <v-container class="d-flex flex-row justify-center items-center ga-16">
+    <div class="d-flex flex-column w-75 my-auto ga-9 ml-4">
+      <h2 class="text-teal-accent-3 text-uppercase text-h5 font-weight-black">Ferramentas Dominadas</h2>
+      <p class="text-white text-justify font-weight-medium">
+        Lucas possui conhecimento em ferramentas que são extensões de seu próprio ser, permitindo-lhe manipular e moldar a interface do usuário como <span class="text-teal-accent-4 font-weight-medium">um artista molda uma tela em branco</span>. As principais ferramentas são:<br/>
       </p>
+      <ul class="text-white text-justify font-weight-medium">
+        <li>Angular - Fluxo de Dados Ilimitado</li>
+        <li>React - Energia de Estado</li>
+        <li>Vue.js - Modularidade Inigualável</li>
+        <li>HTML - Acessibilidade Universal</li>
+        <li>Tailwind CSS - Responsividade Poderosa</li>
+        <li>Typescript - Segurança de Tipos</li>
+      </ul>
+    </div>
+    <div class="w-50 d-flex justify-center items-center ga-11 py-6 mr-14 rounded-xl mt-xl-auto" style="background-color: #2b2b2b59" ref="scrollTarget">
+      <div class="d-flex flex-wrap justify-center items-center my-auto mx-auto ga-12">
+        <v-img :width="80" :max-width="80" :contain="true" src="/src/assets/angular.png" alt="Logo Angular"/>
+        <v-img :width="80" :max-width="80" :contain="true" src="/src/assets/react.png" alt="Logo Angular"/>
+        <v-img :width="80" :max-width="80" :contain="true" src="/src/assets/vue.png" alt="Logo Angular"/>
+        <v-img :width="80" :max-width="80" :contain="true" src="/src/assets/html.png" alt="Logo Angular"/>
+        <v-img :width="80" :max-width="80" :contain="true" src="/src/assets/typescript.png" alt="Logo Angular"/>
+        <v-img :width="80" :max-width="80" :contain="true" src="/src/assets/tailwind.png" alt="Logo Angular"/>
+      </div>
+      
     </div>
   </v-container>
 </template>
 
 <script setup lang="ts">
-//
+
+import { ref, onMounted } from 'vue';
+
+const scrollTarget = ref<HTMLElement | null>(null);
+
+onMounted(() => {
+  scrollToBottom();
+});
+
+function scrollToBottom() {
+  if (scrollTarget.value) {
+    scrollTarget.value.scrollIntoView({ behavior: 'smooth', block: 'end' });
+  }
+}
 </script>
+
+<style scoped>
+.semi-circle {
+  width: 150px;
+  height: 75px;
+  position: relative;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 300px 300px 0 0;
+  overflow: hidden;
+  color: var(--fill);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  box-sizing: border-box;
+
+  &:before,
+  &:after {
+    content: '';
+    width: 150px;
+    height: 75px;
+    border: 17px solid var(--fill);
+    border-top: none;
+    position: absolute;
+    transform-origin: 50% 0% 0;
+    border-radius: 0 0 300px 300px;
+    box-sizing: border-box;
+    left: 0;
+    top: 100%;
+  }
+
+  &:before {
+    border-color: rgba(0, 0, 0, 0.315);
+    transform: rotate(180deg);
+  }
+
+  &:after {
+    z-index: 3;
+    animation: 4s fillGraphAnimation ease-in;
+    transform: rotate(calc(1deg * (var(--percentage) * 1.8)));
+  }
+
+  &:hover {
+    &:after {
+      opacity: .8;    
+    }
+  }
+}
+
+@keyframes fillAnimation{
+  0%{transform : rotate(-45deg);}
+  50%{transform: rotate(135deg);}
+}
+
+@keyframes fillGraphAnimation{
+  0%{transform: rotate(0deg);}
+  50%{transform: rotate(180deg);}
+}
+
+
+</style>

@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-main class="background-app">
-      <Home />
+      <Projects />
     </v-main>
   </v-app>
 </template>
