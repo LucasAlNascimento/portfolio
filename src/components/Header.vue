@@ -5,13 +5,13 @@
             <router-link to="/" class="router-link">Home</router-link>    
           </div>
           <div>
-            <router-link to="/" class="router-link">Sobre</router-link>    
+            <router-link to="/about" class="router-link">Sobre</router-link>    
           </div>
           <div>
             <router-link to="/projects" class="router-link">Projetos</router-link>
           </div>
           <div>
-            <router-link to="/projects" class="router-link">Contato</router-link>
+            <router-link to="/" class="router-link">Contato</router-link>
           </div>
         </v-container>
       </v-app-bar>
