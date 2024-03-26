@@ -12,7 +12,7 @@
 
 <style>
 .background-app {
-  background-image: url('src/backgroundimage.png');
+  background-image: url('./assets/backgroundimage.png');
   background-size: cover;
   background-position: center;
   height: auto;
