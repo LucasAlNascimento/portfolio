@@ -42,7 +42,7 @@
                     JavaScript)</span> e <span class="text-teal-accent-4 font-weight-medium">Vuetify (framework CSS)</span>.
             </p>
         </v-container>
-        <v-container class="d-flex flex-column justify-center items-center mt-n10" style="width: 520px;">
+        <v-container class="d-flex flex-column" style="width: 520px;">
             <img src="/src/assets/lucas.png" alt="Foto Lucas" />
             <div class="w-75 d-flex justify-center items-center ga-11 py-7 px-3 mx-auto my-n7 rounded-xl mt-xl-auto"
                 style="background-color: #2b2b2b59" ref="scrollTarget">

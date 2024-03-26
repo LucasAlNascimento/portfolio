@@ -11,7 +11,7 @@
             <router-link to="/projects" class="router-link">Projetos</router-link>
           </div>
           <div>
-            <router-link to="/" class="router-link">Contato</router-link>
+            <router-link to="/contact" class="router-link">Contato</router-link>
           </div>
         </v-container>
       </v-app-bar>
