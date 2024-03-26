@@ -46,7 +46,7 @@
                     <v-img :width="500" :max-width="500" src="/src/assets/portfolio.png" alt="Projeto Portfolio" class="rounded-xl img" />
                 </a>
                 <div class="w-50 d-flex flex-column justify-center items-center mx-auto ga-8">
-                    <h2 class="text-teal-accent-3 text-h6 font-weight-black">Portfólio (em andamento)</h2>
+                    <h2 class="text-teal-accent-3 text-h6 font-weight-black">Portfólio</h2>
                     <p class="text-white text-h6 text- font-weight-light">Meu portfólio de aplicações criado utilizando as seguintes features:<br /></p>
                     <div class="d-flex flex-row items-center ga-10">
                         <v-img :width="45" :max-width="45" src="/src/assets/vue.png" alt="Logo Vue.js" />
