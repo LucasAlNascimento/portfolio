@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-main class="background-app">
-      <Projects />
+      <router-view />
     </v-main>
   </v-app>
 </template>
