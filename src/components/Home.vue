@@ -5,7 +5,7 @@
   </v-container>
 
   <v-container class="d-flex flex-column flex-md-row ga-16">
-    <v-container class="d-flex flex-column ga-9">
+    <v-container class="d-flex flex-column w-50 ga-9">
       <h1 class="text-teal-accent-3 text-uppercase text-h3 font-weight-black">A Batalha pelo Mundo Front-End</h1>
       <p class="text-white text-justify font-weight-medium">
         Lucas, o aspirante a herói do mundo Front-End, embarcou em uma jornada desafiadora em busca do conhecimento
@@ -22,13 +22,13 @@
         um verdadeiro guardião do Front-End em uma nova era de inovações e estabilidade.
       </p>
     </v-container>
-    <v-container class="d-flex flex-column mt-n7" style="width: 520px;">
+    <v-container class="d-flex flex-column mt-n7" style="width: 510px;">
       <img src="/src/assets/lucashero.png" alt="Ilustração Lucas Herói" />
     </v-container>
   </v-container>
 
   <v-container class="d-flex flex-row justify-center items-center ga-16">
-    <div class="d-flex flex-column w-75 my-auto ga-9 ml-4">
+    <v-container class="d-flex flex-column w-75 my-auto ga-9 ml-4">
       <h2 class="text-teal-accent-3 text-uppercase text-h5 font-weight-black">Habilidades do Herói</h2>
       <p class="text-white text-justify font-weight-medium">
         Um herói desenvolvedor front-end deve possuir <span class="text-teal-accent-4 font-weight-medium">habilidades eficazes</span> como:<br/>
@@ -41,28 +41,15 @@
         <li>Adaptabilidade às Mudanças (ADA) - Adaptability</li>
         <li>Aprendizado Contínuo (LEA) - Learning</li>
       </ul>
-    </div>
-    <div class="w-50 d-flex flex-wrap justify-center items-center ga-11 py-6 mr-14 rounded-xl mt-xl-auto" style="background-color: #2b2b2b59" ref="scrollTarget">
-      <div class="semi-circle" style="--percentage : 95; --fill: #00ff15 ;">
-        Creativity
+    </v-container>
+    <v-container class="w-50 d-flex flex-wrap justify-center items-center ga-11 py-6 ga-xl-14 mr-14 rounded-xl mt-xl-auto" style="background-color: #2b2b2b59;" ref="scrollTarget">
+      <v-col cols="6" sm="8" md="8" lg="5" xl="3" v-for="(item, index) in items" :key="index">
+      <div class="semi-circle" :style="{ '--percentage': item.percentage, '--fill': item.fill }">
+        {{ item.label }}
       </div>
-      <div class="semi-circle" style="--percentage : 89; --fill: #00d9ff ;">
-        Skills
-      </div>
-      <div class="semi-circle" style="--percentage : 94; --fill: #00ff15 ;">
-        Design
-      </div>
-      <div class="semi-circle" style="--percentage : 92; --fill: #00d9ff ;">
-        Communication
-      </div>
-      <div class="semi-circle" style="--percentage : 97; --fill: #00ff15 ;">
-        Adaptability
-      </div>
-      <div class="semi-circle" style="--percentage : 99; --fill: #00d9ff ;">
-        Learning
-      </div>
+    </v-col>
 
-    </div>
+    </v-container>
   </v-container>
 
   <v-container class="d-flex flex-row justify-center items-center ga-16">
@@ -109,6 +96,16 @@ function scrollToBottom() {
     scrollTarget.value.scrollIntoView({ behavior: 'smooth', block: 'end' });
   }
 }
+
+const items = ref([
+  { label: 'Creativity', percentage: 95, fill: '#00ff15' },
+  { label: 'Skills', percentage: 89, fill: '#00d9ff' },
+  { label: 'Design', percentage: 94, fill: '#00ff15' },
+  { label: 'Communication', percentage: 92, fill: '#00d9ff' },
+  { label: 'Adaptability', percentage: 97, fill: '#00ff15' },
+  { label: 'Learning', percentage: 99, fill: '#00d9ff' }
+]);
+
 </script>
 
 <style scoped>
