@@ -25,11 +25,11 @@
 
             
             <div class="w-100 d-flex flex-row">
-                <a>
+                <a href="https://luxmotors.vercel.app/" target="_blank">
                     <v-img :width="500" :max-width="500" src="/src/assets/luxmotors.png" alt="Projeto Luxmotors" class="rounded-xl img" />
                 </a>
                 <div class="w-50 d-flex flex-column justify-center items-center mx-auto ga-8">
-                    <h2 class="text-grey-lighten-1 text-h6 font-weight-black">Luxmotors (em andamento)</h2>
+                    <h2 class="text-grey-lighten-1 text-h6 font-weight-black">Luxmotors</h2>
                     <p class="text-white text-h6 text- font-weight-light">Projeto Front-End de uma empresa que faz locação de carros de luxo utilizando as seguintes features:<br /></p>
                     <div class="d-flex flex-row items-center ga-10">
                         <v-img :width="45" :max-width="45" src="/src/assets/react.png" alt="Logo React" />

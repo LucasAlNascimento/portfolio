@@ -3,87 +3,93 @@
     <Header />
   </v-container>
 
-  <v-container class="d-flex flex-column flex-md-row justify-center ga-10">
-    <v-container class="d-flex flex-column w-100 ga-8 justify-center">
-      <h1 class="text-center text-teal-accent-3 text-uppercase text-h3 font-weight-black">A Batalha pelo Front-End</h1>
-      <p class="text-white text-justify font-weight-medium">
-        Lucas, o aspirante a herói do mundo Front-End, embarcou em uma jornada desafiadora em busca do conhecimento
-        supremo nos frameworks Angular, React e Vue.js - <span class="text-teal-accent-4 font-weight-medium"> os três
-          pilares contidos no reino do desenvolvimento web</span>.<br />
-        <br />
-        Navegando por tutoriais, documentações extensas e projetos práticos, Lucas enfrentou desafios complexos, como
-        integrar componentes reativos e gerenciar estados de forma eficiente. Cada framework representava um teste
-        diferente, mas com sua <span class="text-teal-accent-4 font-weight-medium">determinação inabalável</span>,
-        absorveu as nuances de cada um.<br />
-        <br />
-        Ao superar os obstáculos e compreender as particularidades dos frameworks, Lucas <span
-          class="text-teal-accent-4 font-weight-medium">fortaleceu suas habilidades</span>, preparando-se para se tornar
-        um verdadeiro guardião do Front-End em uma nova era de inovações e estabilidade.
-      </p>
-    </v-container>
-    <v-container class="d-flex flex-column w-100 items-center">
-      <img class="w-100" src="/src/assets/lucashero.png" alt="Ilustração Lucas Herói" />
-    </v-container>
+  <v-container class="d-flex flex-column flex-xl-row ga-10">
+    <v-row class="d-flex flex-column flex-lg-row justify-space-between ga-6">
+      <v-col cols="12" sm="12" md="12" lg="7" xl="6" class="d-flex flex-column ga-10 justify-center">
+        <h1 class="text-center text-lg-justify text-teal-accent-3 text-uppercase text-h3 font-weight-black">A Batalha pelo Front-End</h1>
+          <p class="text-white text-justify font-weight-medium">
+            Lucas, o aspirante a herói do mundo Front-End, embarcou em uma jornada desafiadora em busca do conhecimento
+            supremo nos frameworks Angular, React e Vue.js - <span class="text-teal-accent-4 font-weight-medium"> os três
+              pilares contidos no reino do desenvolvimento web</span>.<br />
+            <br />
+            Navegando por tutoriais, documentações extensas e projetos práticos, Lucas enfrentou desafios complexos, como
+            integrar componentes reativos e gerenciar estados de forma eficiente. Cada framework representava um teste
+            diferente, mas com sua <span class="text-teal-accent-4 font-weight-medium">determinação inabalável</span>,
+            absorveu as nuances de cada um.<br />
+            <br />
+            Ao superar os obstáculos e compreender as particularidades dos frameworks, Lucas <span
+              class="text-teal-accent-4 font-weight-medium">fortaleceu suas habilidades</span>, preparando-se para se tornar
+            um verdadeiro guardião do Front-End em uma nova era de inovações e estabilidade.
+          </p>
+      </v-col>
+      <v-col cols="12" sm="12" md="12" lg="4" xl="3" class="d-flex justify-center">
+          <v-img class="d-flex flex-column items-center" width="400" max-width="400" src="/src/assets/lucashero.png" alt="Ilustração Lucas Herói" />
+      </v-col>
+    </v-row>
   </v-container>
 
   <v-container class="d-flex flex-column w-100 ga-16">
-    <v-container class="d-flex flex-column w-100 ga-9">
-      <h2 class="text-teal-accent-3 text-uppercase text-h5 font-weight-black">Habilidades do Herói</h2>
-      <p class="text-white text-justify font-weight-medium">
-        Um herói desenvolvedor front-end deve possuir <span class="text-teal-accent-4 font-weight-medium">habilidades
-          eficazes</span> como:<br />
-      </p>
-      <ul class="ml-4 text-white text-justify font-weight-medium">
-        <li>Inovação e Criatividade (CRE) - Creativity</li>
-        <li>Habilidades Técnicas (SKI) - Skills</li>
-        <li>Criação de Designs Atrativos (DES) - Design Thinking</li>
-        <li>Comunicação e Colaboração (COM) - Communication</li>
-        <li>Adaptabilidade às Mudanças (ADA) - Adaptability</li>
-        <li>Aprendizado Contínuo (LEA) - Learning</li>
-      </ul>
-    </v-container>
-    <v-container class="w-100" ref="scrollTarget">
-      <div class="rounded-xl w-100 d-flex flex-wrap justify-center items-center" style="background-color: #2b2b2b59;">
-        <v-col class="d-flex justify-center my-15" cols="6" sm="5" md="8" lg="5" xl="3" v-for="(item, index) in items"
-          :key="index">
-          <div class="semi-circle" :style="{ '--percentage': item.percentage, '--fill': item.fill }">
-            {{ item.label }}
-          </div>
-        </v-col>
-      </div>
-    </v-container>
+    <v-row>
+      <v-col cols="12" sm="12" md="12" lg="7" xl="6" class="d-flex flex-column w-100 ga-9">
+        <h2 class="text-teal-accent-3 text-uppercase text-h5 font-weight-black">Habilidades do Herói</h2>
+        <p class="text-white text-justify font-weight-medium">
+          Um herói desenvolvedor front-end deve possuir <span class="text-teal-accent-4 font-weight-medium">habilidades
+            eficazes</span> como:<br />
+        </p>
+        <ul class="ml-4 text-white text-justify font-weight-medium">
+          <li>Inovação e Criatividade (CRE) - Creativity</li>
+          <li>Habilidades Técnicas (SKI) - Skills</li>
+          <li>Criação de Designs Atrativos (DES) - Design Thinking</li>
+          <li>Comunicação e Colaboração (COM) - Communication</li>
+          <li>Adaptabilidade às Mudanças (ADA) - Adaptability</li>
+          <li>Aprendizado Contínuo (LEA) - Learning</li>
+        </ul>
+      </v-col>
+      <v-col cols="12" sm="12" md="12" lg="12" xl="12" class="w-100" ref="scrollTarget">
+        <div class="rounded-xl w-100 d-flex flex-wrap flex-xl-row justify-center items-center" style="background-color: #2b2b2b59;">
+          <v-col class="d-flex justify-center my-15" cols="6" sm="4" md="4" lg="4" xl="2" v-for="(item, index) in items"
+            :key="index">
+            <div class="semi-circle" :style="{ '--percentage': item.percentage, '--fill': item.fill }">
+              {{ item.label }}
+            </div>
+          </v-col>
+        </div>
+      </v-col>
+    </v-row>
   </v-container>
 
-  <v-container class="d-flex flex-column justify-center items-center ga-16">
-    <v-container class="w-100 d-flex flex-column ga-9">
-      <h2 class="text-teal-accent-3 text-uppercase text-h5 font-weight-black">Ferramentas Dominadas</h2>
-      <p class="text-white text-justify font-weight-medium">
-        Lucas possui conhecimento em ferramentas que são extensões de seu próprio ser, permitindo-lhe manipular e moldar
-        a interface do usuário como <span class="text-teal-accent-4 font-weight-medium">um artista molda uma tela em
-          branco</span>. As principais ferramentas são:<br />
-      </p>
-      <ul class="ml-4 text-white font-weight-medium">
-        <li>Angular - Fluxo de Dados Ilimitado</li>
-        <li>React - Energia de Estado</li>
-        <li>Vue.js - Modularidade Inigualável</li>
-        <li>HTML - Acessibilidade Universal</li>
-        <li>Tailwind CSS - Responsividade Poderosa</li>
-        <li>Typescript - Segurança de Tipos</li>
-      </ul>
-    </v-container>
-    <v-container>
-      <div class="w-100 d-flex justify-center items-center ga-11 py-6 rounded-xl"
-        style="background-color: #2b2b2b59" ref="scrollTarget">
-        <v-col class="d-flex flex-wrap justify-center items-center ga-12">
-          <v-img :width="80" :max-width="80" :contain="true" src="/src/assets/angular.png" alt="Logo Angular" />
-          <v-img :width="80" :max-width="80" :contain="true" src="/src/assets/react.png" alt="Logo Angular" />
-          <v-img :width="80" :max-width="80" :contain="true" src="/src/assets/vue.png" alt="Logo Angular" />
-          <v-img :width="80" :max-width="80" :contain="true" src="/src/assets/html.png" alt="Logo Angular" />
-          <v-img :width="80" :max-width="80" :contain="true" src="/src/assets/typescript.png" alt="Logo Angular" />
-          <v-img :width="80" :max-width="80" :contain="true" src="/src/assets/tailwind.png" alt="Logo Angular" />
-        </v-col>
-      </div>
-    </v-container>
+  <v-container class="d-flex flex-column flex-lg-row ga-16">
+    <v-row class="d-flex items-center justify-space-between">
+      <v-col cols="12" sm="12" md="12" lg="6" xl="4" class="w-100 d-flex flex-column ga-9">
+        <h2 class="text-teal-accent-3 text-uppercase text-h5 font-weight-black">Ferramentas Dominadas</h2>
+        <p class="w-100 text-white text-justify font-weight-medium">
+          Lucas possui conhecimento em ferramentas que são extensões de seu próprio ser, permitindo-lhe manipular e moldar
+          a interface do usuário como <span class="text-teal-accent-4 font-weight-medium">um artista molda uma tela em
+            branco</span>. As principais ferramentas são:<br />
+        </p>
+        <ul class="ml-4 text-white font-weight-medium">
+          <li>Angular - Fluxo de Dados Ilimitado</li>
+          <li>React - Energia de Estado</li>
+          <li>Vue.js - Modularidade Inigualável</li>
+          <li>HTML - Acessibilidade Universal</li>
+          <li>Tailwind CSS - Responsividade Poderosa</li>
+          <li>Typescript - Segurança de Tipos</li>
+        </ul>
+      </v-col>
+      <v-col cols="12" sm="12" md="12" lg="5" xl="4">
+        <div class="w-100 d-flex justify-center items-center pa-11 rounded-xl"
+          style="background-color: #2b2b2b59" ref="scrollTarget">
+          <v-col class="d-flex flex-wrap justify-center items-center ga-12">
+            <v-img :width="80" :max-width="80" :contain="true" src="/src/assets/angular.png" alt="Logo Angular" />
+            <v-img :width="80" :max-width="80" :contain="true" src="/src/assets/react.png" alt="Logo Angular" />
+            <v-img :width="80" :max-width="80" :contain="true" src="/src/assets/vue.png" alt="Logo Angular" />
+            <v-img :width="80" :max-width="80" :contain="true" src="/src/assets/html.png" alt="Logo Angular" />
+            <v-img :width="80" :max-width="80" :contain="true" src="/src/assets/typescript.png" alt="Logo Angular" />
+            <v-img :width="80" :max-width="80" :contain="true" src="/src/assets/tailwind.png" alt="Logo Angular" />
+          </v-col>
+        </div>
+      </v-col>
+    </v-row>
   </v-container>
 </template>
 
