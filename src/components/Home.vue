@@ -136,45 +136,42 @@ const items = ref([
   align-items: flex-end;
   justify-content: center;
   box-sizing: border-box;
+}
 
-  &:before,
-  &:after {
-    content: '';
-    width: 150px;
-    height: 75px;
-    border: 17px solid var(--fill);
-    border-top: none;
-    position: absolute;
-    transform-origin: 50% 0% 0;
-    border-radius: 0 0 300px 300px;
-    box-sizing: border-box;
-    left: 0;
-    top: 100%;
-  }
+.semi-circle::before,
+.semi-circle::after {
+  content: '';
+  width: 150px;
+  height: 75px;
+  border: 17px solid var(--fill);
+  border-top: none;
+  position: absolute;
+  transform-origin: 50% 0% 0;
+  border-radius: 0 0 300px 300px;
+  box-sizing: border-box;
+  left: 0;
+  top: 100%;
+}
 
-  &:before {
-    border-color: rgba(0, 0, 0, 0.315);
-    transform: rotate(180deg);
-  }
+.semi-circle::before {
+  border-color: rgba(0, 0, 0, 0.315);
+  transform: rotate(180deg);
+}
 
-  &:after {
-    z-index: 3;
-    animation: 4s fillGraphAnimation ease-in;
-    transform: rotate(calc(1deg * (var(--percentage) * 1.8)));
-  }
+.semi-circle::after {
+  z-index: 3;
+  animation: 4s fillGraphAnimation ease-in;
+  transform: rotate(calc(1deg * (var(--percentage) * 1.8)));
+}
 
-  &:hover {
-    &:after {
-      opacity: .8;
-    }
-  }
+.semi-circle:hover::after {
+  opacity: 0.8;
 }
 
 @keyframes fillAnimation {
   0% {
     transform: rotate(-45deg);
   }
-
   50% {
     transform: rotate(135deg);
   }
@@ -184,7 +181,6 @@ const items = ref([
   0% {
     transform: rotate(0deg);
   }
-
   50% {
     transform: rotate(180deg);
   }
