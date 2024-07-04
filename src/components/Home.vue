@@ -95,6 +95,28 @@
 
 <script setup lang="ts">
 
+import { ref, onMounted } from 'vue';
+
+const scrollTarget = ref<HTMLElement | null>(null);
+
+onMounted(() => {
+  scrollToBottom();
+});
+
+function scrollToBottom() {
+  if (scrollTarget.value) {
+    scrollTarget.value.scrollIntoView({ behavior: 'smooth', block: 'end' });
+  }
+}
+
+const items = ref([
+  { label: 'Creativity', percentage: 95, fill: '#00ff15' },
+  { label: 'Skills', percentage: 89, fill: '#00d9ff' },
+  { label: 'Design', percentage: 94, fill: '#00ff15' },
+  { label: 'Communication', percentage: 92, fill: '#00d9ff' },
+  { label: 'Adaptability', percentage: 97, fill: '#00ff15' },
+  { label: 'Learning', percentage: 99, fill: '#00d9ff' }
+]);
 
 </script>
 
