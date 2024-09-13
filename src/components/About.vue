@@ -16,7 +16,7 @@
                 <p class="text-white text-justify font-weight-medium"> 
                     Desde criança tenho afinidade e facilidade com tecnologia, especialmente com o
                     <span class="text-teal-accent-3">desenvolvimento front-end</span>.
-                    Na graduação, participei do projeto de uma empresa fictícia que vendia tecidos sustentáveis, usando HTML, CSS e Javascript. Atualmente estou em busca do meu primeiro emprego na área do desenvolvimento front-end. Possuo experiência em frameworks JavaScript como 
+                    Na graduação, participei do projeto de uma empresa fictícia que vendia tecidos sustentáveis, usando HTML, CSS e Javascript. Atualmente estou em busca da minha consolidação e evolução como engenheiro front-end. Possuo experiência em frameworks JavaScript como 
                     <span class="text-teal-accent-3">React, Angular e Vue.js</span>,
                     além de outras ferramentas como:
                 </p>
