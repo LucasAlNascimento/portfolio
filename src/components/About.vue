@@ -21,12 +21,25 @@
                     além de outras ferramentas como:
                 </p>
                 <ul class="text-white ml-4 font-weight-medium">
-                    <li>TypeScript</li>
-                    <li>Redux</li>
-                    <li>Jest</li>
+                    <li>ReactJS | NextJS</li>
+                    <li>Angular</li>
+                    <li>Vue.js</li>
+                    <li>Styled-Components | Sass | Bootstrap | Tailwind CSS | Vuetify</li>
+                    <li>Redux | ContextAPI | Zustand</li>
+                    <li>Axios | React Query</li>
+                    <li>Jest | React Testing Library</li>
+                    <li>HTML5 | CSS3</li>
+                    <li>JavaScript | TypeScript</li>
+                    <li>PHP</li>
+                    <li>MySQL | SQL Server</li>
+                    <li>C# | .NET</li>
+                    <li>Apache Kafka</li>
+                    <li>Docker</li>
+                    <li>Jenkins</li>
+                    <li>Azure</li>
                     <li>Git</li>
-                    <li>Tailwind CSS</li>
-                    <li>Vuetify</li>
+                    <li>Vite</li>
+                    <li>Vercel</li>
                 </ul>
             </v-col>
         </v-row>
