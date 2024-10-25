@@ -20,20 +20,16 @@
                     além de outras ferramentas como:
                 </p>
                 <ul class="text-white ml-4 font-weight-medium">
-                    <li>NextJS</li>
                     <li>Styled-Components | Sass | Bootstrap | Tailwind CSS | Vuetify</li>
-                    <li>Redux | ContextAPI | Zustand</li>
+                    <li>Redux | ContextAPI</li>
                     <li>Axios | React Query</li>
                     <li>Jest | React Testing Library</li>
                     <li>TypeScript</li>
                     <li>PHP</li>
                     <li>MySQL | SQL Server</li>
-                    <li>C# | .NET</li>
-                    <li>Apache Kafka</li>
                     <li>Docker</li>
-                    <li>Jenkins</li>
-                    <li>Azure</li>
-                    <li>Git | GitHub</li>
+                    <li>AWS</li>
+                    <li>Git</li>
                 </ul>
             </v-col>
         </v-row>
