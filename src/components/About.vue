@@ -26,11 +26,11 @@
                     além de outras ferramentas como:
                 </p>
                 <ul class="text-white ml-4 font-weight-medium">
-                    <li>Styled-Components | Sass | Bootstrap | Tailwind CSS | Vuetify</li>
+                    <li>TypeScript</li>
                     <li>Redux | ContextAPI</li>
                     <li>Axios | React Query</li>
                     <li>Jest | React Testing Library</li>
-                    <li>TypeScript</li>
+                    <li>Styled-Components | Sass | Bootstrap | Tailwind CSS | Vuetify</li>
                     <li>PHP</li>
                     <li>MySQL | SQL Server</li>
                     <li>Docker</li>
