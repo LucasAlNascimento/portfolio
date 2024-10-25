@@ -1,6 +1,6 @@
 <template>
       <v-app-bar absolute class="bg-black">
-        <v-container class="d-flex justify-center justify-lg-start ga-15 text-teal-accent-4 font-weight-medium">
+        <v-container class="d-flex justify-space-between px-6 text-teal-accent-4 font-weight-medium justify-sm-start ga-sm-15">
           <div>
             <router-link to="/" class="router-link">Home</router-link>    
           </div>
